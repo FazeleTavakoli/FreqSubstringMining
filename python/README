@@ -2,12 +2,14 @@ INSTRUCTIONS
 ------------
 
 
-You need to install the python mmh3 package to run this code https://pypi.python.org/pypi/mmh3/2.0.
+You need to install the python mmh3 package to run this code https://pypi.python.org/pypi/mmh3/2.0. On ubuntu you can run 'sudo pip install murmurhash3'
 
-After git clone:
+In a directory on your laptop 
 
-cd python/
+git clone https://github.com/FazeleTavakoli/FreqSubstringMining.git
+cd FreqSubstringMining/python/
+rm bloom.pickle
 python freqSubStrMin.py sequential-data.txt 1000
 
-This outputs everything on console, and not to a file. The file bloom.pickle is the pre-created bloom file. You can delete it and the code will re-generate it again. Takes around 10 minutes on my computer.
+This outputs everything on console, and not to a file. The file bloom.pickle is the pre-created bloom file. You can delete it and the code will re-generate it again. Takes around 3 minutes on my computer using 3 cores.
 
